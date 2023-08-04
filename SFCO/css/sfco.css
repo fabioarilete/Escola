@@ -1,0 +1,310 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+* {
+  margin: 0;
+  font-family: 'Quicksand';
+  padding: 0;
+}
+
+/* body {
+  display: flex;
+  width: 100%;
+  height: 100%;
+} */
+
+/****  MENU ****/
+
+.menuLateral{
+  /* border: 1px solid greenyellow; */
+  background-color: #202020;
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  left: -200px;
+  transition: left 0.5s;
+  /* color: white; */
+}
+
+.menuLateral:hover {
+  width: 250px;
+  transition: 0.4s;
+  left: 0;
+}
+
+.itensMenu {
+  margin-top: 0px;
+  /* border: 1px solid red; */
+}
+
+.menuLateral ul {
+  list-style: none;
+}
+
+.menuLateral ul li {
+  margin-top: 10px;
+  line-height: 30px;
+  /* border-bottom: 1px solid white; */
+}
+
+.menuLateral ul li a {
+  /* border: 1px solid greenyellow; */
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  padding-left: 50px;
+  font-weight: bold;
+  display: block;
+}
+
+.menuLateral ul li a:hover {
+  background-color: red;
+  transition: 0.5s;
+  /* color: greenyellow; */
+}
+
+.menuLateral ul ul li a {
+  font-size: 16px;
+  font-weight: 300;
+  padding-left: 90px;
+  background-color: #333333;
+}
+
+.menuLateral ul ul {
+  display: none;
+}
+
+.menuLateral ul .itensCadastros.mostra {
+ display: block; 
+}
+
+.menuLateral ul .itensGestao.mostra {
+  display: block; 
+ }
+
+ .menuLateral ul .itensConfiguracoes.mostra {
+  display: block; 
+ }
+
+ .menuLateral.mostra {
+  left: 0;
+ }
+
+ .menuLateral ul li a span span {
+  font-size: 20px;
+  position: absolute;
+  right: 30px;
+  transition: 0.4s;
+  /* border: 1px solid greenyellow;  */
+ }
+
+ .menuLateral ul li a span {
+  right: 13px;
+  font-size: 25px;
+  position: absolute;
+  font-weight: 100;
+  transition: 0.4s;
+ }
+
+ .seta1 {
+  margin-right: 200px;
+ }
+ .seta2 {
+  margin-right: 200px;
+ }
+ .seta3 {
+  margin-right: 200px;
+ }
+
+ .menuLateral ul li a span.gira {
+  transform: rotate(90deg);
+ }
+ 
+ .menuTop {
+  /* border: 1px solid greenyellow; */
+  color: yellow;
+  font-size: 30pt;
+  font-weight: 500;
+  margin-left: 75px;
+  margin-top: 15px;
+  margin-bottom: 10;
+ }
+
+ /********************/
+
+ /***** HOME *****/
+
+ .principal iframe{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+ }
+
+ .container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+ }
+
+ .logo img{
+  width: 200px;
+ }
+
+ .fotoPrincipal {
+
+ }
+
+ .fotoPrincipal img{
+  width: 800px;
+ }
+
+ .slogan p {
+  font-size: 30pt;
+ }
+
+ /*****************/
+
+ /******* CADASTRAR MATERIA PRIMA ********/
+
+ #CadastroMp {
+  background-color: #202020;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+ }
+
+ .containerMp {
+  background-color: #3e3e3e;
+  width: 50%;
+  padding: 20px;
+  margin-top: 50px;
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 2px 2px 4px rgba(255, 255, 255, 0.46);
+  border-radius: 10px;
+  /* border: 1px solid red; */
+ }
+
+ .parametrosMp {
+  display: flex;
+  /* border: 1px solid white; */
+  width: 100%;
+ }
+
+ /* .parametrosMp {
+  position: relative;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  border: 1px solid red;
+ } */
+
+ .campo_form {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: flex-start; */
+  /* margin-bottom: 10px; */
+  /* margin-left: 10px; */
+  /* border: 1px solid red; */
+}
+
+.informacoesMp {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.descricaoMp input {
+  width: 100%;
+  height: 30px;
+  font-size: 18pt;
+  font-weight: 700;
+  color: black;
+}
+
+.valorMp {
+  width: 50%;
+  }
+
+.valorMp input {
+  width: 100%;
+  height: 30px;
+  font-size: 18pt;
+  font-weight: 700;
+  color: black;
+}
+
+.unidadeMp {
+  width: 30%;
+  margin-left: 50px;
+}
+
+.unidadeMp input {
+  width: 100%;
+  height: 30px;
+  font-size: 18pt;
+  font-weight: 700;
+  color: black;
+}
+
+.campoAliq {
+  width: 25%;
+}
+
+.campoAliq input{
+  width: 90%;
+  height: 30px;
+  font-size: 18pt;
+  font-weight: 700;
+  color: black;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 5px;
+  padding: 10px;
+  color: greenyellow;
+}
+
+h3 {
+  margin-top: 15px;
+  padding: 10px;
+  text-align: center;
+  color: greenyellow;
+}
+
+.statusFornecedor {
+  justify-content: space-around;
+  display: flex;
+  padding: 5px;
+  font-size: 16pt;
+}
+
+.btnMp button{
+  border-radius: 5px;
+  background-color: red;
+  width: 110px;
+  height: 40px;
+  margin: 15px;
+  color: white;
+  font-size: 14pt;
+  font-weight: 700;
+  box-shadow: 2px 2px 1px rgba(188, 177, 177, 0.423);
+}
+
+
+ /****************************************/

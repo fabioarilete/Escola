@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/sfco.css">
+  <title>Cadastro Matéria Prima</title>
+</head>
+<body id="CadastroMp">
+  <div class="containerMp">
+
+    <h1>Cadastro de Matéria Prima</h1>
+      <div class="descricaoMp campo_form">
+        <label for="">Descrição Material</label>
+        <input type="text" name="txt_descricaoMp" id="txt_descricaoMp">
+      </div>
+      <div class="informacoesMp">
+      <div class="valorMp campo_form">
+        <label for="">Valor</label>
+        <input type="text" name="txt_valorMp" id="txt_valorMp">
+      </div>
+
+      <div class="unidadeMp campo_form">
+        <label for="">Unidade</label>
+        <input type="text" name="txt_unidadeMp" id="txt_unidadeMp">
+      </div>
+    </div>
+
+    <h3>Status do Fornecedor</h3>
+    <div class="statusFornecedor">
+      <div class="presumido">
+        <input type="radio" name="f_status" id="presumido">
+        <label for="">Presumido</label>
+      </div>
+
+      <div class="simples">
+        <input type="radio" name="f_status" id="simples">
+        <label for="">Simples</label>
+      </div>
+    </div>
+
+    <h3>Parâmetros do Material</h3>
+    <div class="parametrosMp" id="parametrosMP">
+      <div class="nfMp campo_form campoAliq" id="nfMp">
+        <label for="">NF %</label>
+        <input type="text" name="txt_nfMp" id="txt_nfMp" class="campoAliq">
+      </div>
+
+      <div class="freteMp campo_form campoAliq" id="freteMp">
+        <label for="">Frete %</label>
+        <input type="text" name="txt_freteMp" id="txt_freteMp" class="campoAliq">
+      </div>
+
+      <div class="icmsMp campo_form campoAliq" id="icmsMp">
+        <label for="">ICMS %</label>
+        <input type="text" name="txt_icmsMp" id="txt_icmsMp" class="campoAliq">
+      </div>
+
+      <div class="ipiMp campo_form campoAliq" id="ipiMp">
+        <label for="">IPI %</label>
+        <input type="text" name="txt_ipiMp" id="txt_ipiMp" class="campoAliq">
+      </div>
+    </div>
+    <div class="btnMp">
+      <button id="btnGravarMp">Gravar</button>
+      <button id="btnCancelarMp">Cancelar</button>
+    </div>
+  </div>
+
+  <script src="../js/cadastroMp.js"></script>
+</body>
+</html>
