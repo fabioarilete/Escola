@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Primeiros passos com DOM</title>
+  </head>
+  <style>
+    body {
+      background: rgb(72, 72, 176);
+      color: white;
+      font: normal 15pt arial;
+
+    }    }
+  </style>
+  <body>
+    <h1>Iniciando estudos com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+    <script>
+      /* selecionar qualquer elemento da arvore DOM
+
+        * por marca
+            getElementsByTagName()
+
+        * por id
+            getElementById()
+
+        * por Nome
+            getElementsByName
+
+        * por Classe
+            getElementsByClassName
+
+        * por Seletor
+            querySelector
+            querySelectorAll
+            id = #
+            Class = .
+
+        */
+
+      var corpo = window.document.body;
+      var p1 = window.document.getElementsByTagName("p")[0];
+      var p2 = window.document.getElementsByTagName("p")[1];
+      var h1 = window.document.getElementsByTagName("h1")[0];
+      var d = window.document.querySelector("div#msg");
+
+      corpo.style.background = "black";
+      p1.style.color = "red";
+      p2.style.color = "yellowgreen";
+      h1.style.color = "yellow";
+      d.style.color = "blue";
+      d.style.fontFamily = "arial";
+      d.style.fontSize = "18pt";
+      document.write(p2.innerHTML);
+      d.style.background = "yellow";
+    </script>
+  </body>
+</html>

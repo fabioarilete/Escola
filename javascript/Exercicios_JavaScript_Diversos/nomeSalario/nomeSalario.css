@@ -1,0 +1,34 @@
+body {
+  background-color: orange;
+}
+header {
+  font: bold 17pt arial;
+  color: white;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.659);
+  background-color: gray;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+section {
+  padding: 2%;
+  background-color: gray;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.582);
+}
+
+.informacoes input.txtnome {
+  width: 400px;
+}
+.informacoes input.salario {
+  width: 150px;
+}
+
+footer {
+  padding: 5%;
+  color: white;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  font: italic 14pt arial;
+}
