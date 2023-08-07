@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boas Vindas</title>
+  <link rel="stylesheet" href="boasVindas.css">
+</head>
+<body>
+  <header>
+    <h1>Boas Vindas!</h1>
+  </header>
+  <section>
+    <div class="informacoes">
+      
+      <p>
+        <h2>Digite seu nome:</h2>
+        <input type="text" name="txtnome" id="txtnome" class="txtnome">
+      </p>
+      <P>
+        <h2>Idade:</h2>
+        <input type="number" name="txtidade" id="txtidade" class="txtidade">
+      </P>
+        <p>
+          <h2>Sexo:</h2>
+          <input type="radio" name="radsex" id="mas" checked />
+          <label for="mas">masculino</label>
+          <input type="radio" name="radsex" id="fem" />
+          <label for="fem">Feminino</label>
+        </p>
+      <p>
+        <input type="button" value="carregar" onclick="carregar()">
+      </p>
+
+    </div>
+
+    <div id="res">
+      <h2>Digite as informações acima.</h2>
+    </div>
+
+  </section>
+  <footer>
+    &copy; <i>Curso do Fábio</i>
+  </footer>
+  <script src="boasVindas.js">
+
+  </script>
+  
+</body>
+</html>
