@@ -80,7 +80,7 @@
 const h1Data = document.querySelector(".textoData");
 const data = new Date();
 
-function getDiaSemana(numeroDiaSemana) {
+function getDiaSemanaTexto(numeroDiaSemana) {
   const diaSemanaTexto = [
     "domingo",
     "segunda-feira",
@@ -117,12 +117,19 @@ function zeroAEsquerda(num) {
 
 function criaData(data) {
   const diaSemana = data.getDay();
-  const dia = zeroAEsquerda(data.getDate());
   const mes = data.getMonth();
+
+  const dia = zeroAEsquerda(data.getDate());
   const ano = data.getFullYear();
+
+  const nomeDia = getDiaSemanaTexto(diaSemana);
+  const nomeMes = getNomeMes(mes);
+
   const hora = zeroAEsquerda(data.getHours());
   const min = zeroAEsquerda(data.getMinutes());
+  return `${nomeDia}, ${dia} de ${nomeMes} de ${ano}  ${hora}:${min}`;
 }
+
 console.log(criaData(data));
 
 h1Data.innerHTML = criaData(data);
