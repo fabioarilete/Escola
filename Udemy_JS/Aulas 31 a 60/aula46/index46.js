@@ -1,7 +1,7 @@
 // setInterval e setTimeout
 
 function mostraHora() {
-  let data = new Date();
+  let data = new Date(0);
   return data.toLocaleTimeString("pt-BR");
 }
 
