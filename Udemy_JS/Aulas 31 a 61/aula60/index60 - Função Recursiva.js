@@ -1,7 +1,7 @@
 // Função recursiva
 
 function recursiva(max) {
-  if (max >= 100000) return;
+  if (max >= 10) return;
   max++;
   console.log(max);
   recursiva(max);
